@@ -1,0 +1,2723 @@
+0 : [[8, 11]]
+8 : [[42]]
+42 : [[41, 68], [48, 105]]
+41 : a
+68 : [[64, 41], [24, 48]]
+64 : [[48, 44], [41, 74]]
+48 : b
+44 : [[101, 48], [114, 41]]
+101 : [[129, 48], [93, 41]]
+129 : [[48, 110], [41, 120]]
+loop with start_rule 48
+48 : b
+110 : [[48, 41], [41, 41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+120 : [[48, 41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+93 : [[110, 41], [34, 48]]
+loop with start_rule 110
+110 : [[48, 41], [41, 41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+34 : [[48, 41], [48, 48]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+114 : [[41, 117], [48, 73]]
+loop with start_rule 41
+41 : a
+117 : [[48, 120], [41, 39]]
+loop with start_rule 48
+48 : b
+loop with start_rule 120
+120 : [[48, 41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+39 : [[41, 67], [48, 41]]
+loop with start_rule 41
+41 : a
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+73 : [[1, 48], [103, 41]]
+1 : [[41, 41], [48, 48]]
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+103 : [[67, 67]]
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+74 : [[41, 107], [48, 124]]
+loop with start_rule 41
+41 : a
+107 : [[79, 41], [33, 48]]
+79 : [[67, 1]]
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 1
+1 : [[41, 41], [48, 48]]
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+33 : [[120, 41]]
+loop with start_rule 120
+120 : [[48, 41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+124 : [[83, 48], [130, 41]]
+83 : [[67, 89]]
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+89 : [[41, 41], [41, 48]]
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+130 : [[103, 48], [89, 41]]
+loop with start_rule 103
+103 : [[67, 67]]
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 89
+89 : [[41, 41], [41, 48]]
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+24 : [[48, 109], [41, 38]]
+loop with start_rule 48
+48 : b
+109 : [[48, 113], [41, 99]]
+loop with start_rule 48
+48 : b
+113 : [[49, 41], [56, 48]]
+49 : [[81, 41], [7, 48]]
+81 : [[48, 48], [67, 41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+7 : [[41, 41]]
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+56 : [[34, 48], [39, 41]]
+loop with start_rule 34
+34 : [[48, 41], [48, 48]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 39
+39 : [[41, 67], [48, 41]]
+loop with start_rule 41
+41 : a
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+99 : [[97, 48], [92, 41]]
+97 : [[41, 120], [48, 34]]
+loop with start_rule 41
+41 : a
+loop with start_rule 120
+120 : [[48, 41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 34
+34 : [[48, 41], [48, 48]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+92 : [[48, 103], [41, 34]]
+loop with start_rule 48
+48 : b
+loop with start_rule 103
+103 : [[67, 67]]
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 34
+34 : [[48, 41], [48, 48]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+38 : [[2, 48], [77, 41]]
+2 : [[48, 85], [41, 128]]
+loop with start_rule 48
+48 : b
+85 : [[120, 41], [89, 48]]
+loop with start_rule 120
+120 : [[48, 41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 89
+89 : [[41, 41], [41, 48]]
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+128 : [[48, 72], [41, 1]]
+loop with start_rule 48
+48 : b
+72 : [[48, 48], [41, 67]]
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 1
+1 : [[41, 41], [48, 48]]
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+77 : [[40, 48], [47, 41]]
+40 : [[81, 48], [7, 41]]
+loop with start_rule 81
+81 : [[48, 48], [67, 41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 7
+7 : [[41, 41]]
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+47 : [[120, 41], [81, 48]]
+loop with start_rule 120
+120 : [[48, 41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 81
+81 : [[48, 48], [67, 41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+105 : [[46, 41], [78, 48]]
+46 : [[48, 29], [41, 82]]
+loop with start_rule 48
+48 : b
+29 : [[116, 48], [3, 41]]
+116 : [[41, 93], [48, 122]]
+loop with start_rule 41
+41 : a
+loop with start_rule 93
+93 : [[110, 41], [34, 48]]
+loop with start_rule 110
+110 : [[48, 41], [41, 41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 34
+34 : [[48, 41], [48, 48]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+122 : [[48, 120], [41, 89]]
+loop with start_rule 48
+48 : b
+loop with start_rule 120
+120 : [[48, 41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 89
+89 : [[41, 41], [41, 48]]
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+3 : [[48, 118], [41, 25]]
+loop with start_rule 48
+48 : b
+118 : [[89, 41], [132, 48]]
+loop with start_rule 89
+89 : [[41, 41], [41, 48]]
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+132 : [[41, 48], [48, 41]]
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+25 : [[48, 81], [41, 7]]
+loop with start_rule 48
+48 : b
+loop with start_rule 81
+81 : [[48, 48], [67, 41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 7
+7 : [[41, 41]]
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+82 : [[23, 48], [21, 41]]
+23 : [[84, 41], [27, 48]]
+84 : [[18, 48]]
+18 : [[48, 48]]
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+27 : [[100, 41], [7, 48]]
+100 : [[48, 41], [67, 48]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 7
+7 : [[41, 41]]
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+21 : [[48, 83], [41, 51]]
+loop with start_rule 48
+48 : b
+loop with start_rule 83
+83 : [[67, 89]]
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 89
+89 : [[41, 41], [41, 48]]
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+51 : [[41, 1], [48, 81]]
+loop with start_rule 41
+41 : a
+loop with start_rule 1
+1 : [[41, 41], [48, 48]]
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 81
+81 : [[48, 48], [67, 41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+78 : [[41, 65], [48, 66]]
+loop with start_rule 41
+41 : a
+65 : [[16, 48], [58, 41]]
+16 : [[48, 5], [41, 45]]
+loop with start_rule 48
+48 : b
+5 : [[41, 110]]
+loop with start_rule 41
+41 : a
+loop with start_rule 110
+110 : [[48, 41], [41, 41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+45 : [[7, 48]]
+loop with start_rule 7
+7 : [[41, 41]]
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+58 : [[41, 22], [48, 111]]
+loop with start_rule 41
+41 : a
+22 : [[103, 48], [18, 41]]
+loop with start_rule 103
+103 : [[67, 67]]
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 18
+18 : [[48, 48]]
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+111 : [[103, 67]]
+loop with start_rule 103
+103 : [[67, 67]]
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+66 : [[41, 126], [48, 121]]
+loop with start_rule 41
+41 : a
+126 : [[75, 48], [27, 41]]
+75 : [[89, 41], [39, 48]]
+loop with start_rule 89
+89 : [[41, 41], [41, 48]]
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 39
+39 : [[41, 67], [48, 41]]
+loop with start_rule 41
+41 : a
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 27
+27 : [[100, 41], [7, 48]]
+loop with start_rule 100
+100 : [[48, 41], [67, 48]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 7
+7 : [[41, 41]]
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+121 : [[48, 49], [41, 47]]
+loop with start_rule 48
+48 : b
+loop with start_rule 49
+49 : [[81, 41], [7, 48]]
+loop with start_rule 81
+81 : [[48, 48], [67, 41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 7
+7 : [[41, 41]]
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 47
+47 : [[120, 41], [81, 48]]
+loop with start_rule 120
+120 : [[48, 41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 81
+81 : [[48, 48], [67, 41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+11 : [[42, 31]]
+loop with start_rule 42
+42 : [[41, 68], [48, 105]]
+loop with start_rule 41
+41 : a
+loop with start_rule 68
+68 : [[64, 41], [24, 48]]
+loop with start_rule 64
+64 : [[48, 44], [41, 74]]
+loop with start_rule 48
+48 : b
+loop with start_rule 44
+44 : [[101, 48], [114, 41]]
+loop with start_rule 101
+101 : [[129, 48], [93, 41]]
+loop with start_rule 129
+129 : [[48, 110], [41, 120]]
+loop with start_rule 48
+48 : b
+loop with start_rule 110
+110 : [[48, 41], [41, 41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 120
+120 : [[48, 41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 93
+93 : [[110, 41], [34, 48]]
+loop with start_rule 110
+110 : [[48, 41], [41, 41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 34
+34 : [[48, 41], [48, 48]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 114
+114 : [[41, 117], [48, 73]]
+loop with start_rule 41
+41 : a
+loop with start_rule 117
+117 : [[48, 120], [41, 39]]
+loop with start_rule 48
+48 : b
+loop with start_rule 120
+120 : [[48, 41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 39
+39 : [[41, 67], [48, 41]]
+loop with start_rule 41
+41 : a
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 73
+73 : [[1, 48], [103, 41]]
+loop with start_rule 1
+1 : [[41, 41], [48, 48]]
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 103
+103 : [[67, 67]]
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 74
+74 : [[41, 107], [48, 124]]
+loop with start_rule 41
+41 : a
+loop with start_rule 107
+107 : [[79, 41], [33, 48]]
+loop with start_rule 79
+79 : [[67, 1]]
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 1
+1 : [[41, 41], [48, 48]]
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 33
+33 : [[120, 41]]
+loop with start_rule 120
+120 : [[48, 41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 124
+124 : [[83, 48], [130, 41]]
+loop with start_rule 83
+83 : [[67, 89]]
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 89
+89 : [[41, 41], [41, 48]]
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 130
+130 : [[103, 48], [89, 41]]
+loop with start_rule 103
+103 : [[67, 67]]
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 89
+89 : [[41, 41], [41, 48]]
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 24
+24 : [[48, 109], [41, 38]]
+loop with start_rule 48
+48 : b
+loop with start_rule 109
+109 : [[48, 113], [41, 99]]
+loop with start_rule 48
+48 : b
+loop with start_rule 113
+113 : [[49, 41], [56, 48]]
+loop with start_rule 49
+49 : [[81, 41], [7, 48]]
+loop with start_rule 81
+81 : [[48, 48], [67, 41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 7
+7 : [[41, 41]]
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 56
+56 : [[34, 48], [39, 41]]
+loop with start_rule 34
+34 : [[48, 41], [48, 48]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 39
+39 : [[41, 67], [48, 41]]
+loop with start_rule 41
+41 : a
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 99
+99 : [[97, 48], [92, 41]]
+loop with start_rule 97
+97 : [[41, 120], [48, 34]]
+loop with start_rule 41
+41 : a
+loop with start_rule 120
+120 : [[48, 41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 34
+34 : [[48, 41], [48, 48]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 92
+92 : [[48, 103], [41, 34]]
+loop with start_rule 48
+48 : b
+loop with start_rule 103
+103 : [[67, 67]]
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 34
+34 : [[48, 41], [48, 48]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 38
+38 : [[2, 48], [77, 41]]
+loop with start_rule 2
+2 : [[48, 85], [41, 128]]
+loop with start_rule 48
+48 : b
+loop with start_rule 85
+85 : [[120, 41], [89, 48]]
+loop with start_rule 120
+120 : [[48, 41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 89
+89 : [[41, 41], [41, 48]]
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 128
+128 : [[48, 72], [41, 1]]
+loop with start_rule 48
+48 : b
+loop with start_rule 72
+72 : [[48, 48], [41, 67]]
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 1
+1 : [[41, 41], [48, 48]]
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 77
+77 : [[40, 48], [47, 41]]
+loop with start_rule 40
+40 : [[81, 48], [7, 41]]
+loop with start_rule 81
+81 : [[48, 48], [67, 41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 7
+7 : [[41, 41]]
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 47
+47 : [[120, 41], [81, 48]]
+loop with start_rule 120
+120 : [[48, 41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 81
+81 : [[48, 48], [67, 41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 105
+105 : [[46, 41], [78, 48]]
+loop with start_rule 46
+46 : [[48, 29], [41, 82]]
+loop with start_rule 48
+48 : b
+loop with start_rule 29
+29 : [[116, 48], [3, 41]]
+loop with start_rule 116
+116 : [[41, 93], [48, 122]]
+loop with start_rule 41
+41 : a
+loop with start_rule 93
+93 : [[110, 41], [34, 48]]
+loop with start_rule 110
+110 : [[48, 41], [41, 41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 34
+34 : [[48, 41], [48, 48]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 122
+122 : [[48, 120], [41, 89]]
+loop with start_rule 48
+48 : b
+loop with start_rule 120
+120 : [[48, 41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 89
+89 : [[41, 41], [41, 48]]
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 3
+3 : [[48, 118], [41, 25]]
+loop with start_rule 48
+48 : b
+loop with start_rule 118
+118 : [[89, 41], [132, 48]]
+loop with start_rule 89
+89 : [[41, 41], [41, 48]]
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 132
+132 : [[41, 48], [48, 41]]
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 25
+25 : [[48, 81], [41, 7]]
+loop with start_rule 48
+48 : b
+loop with start_rule 81
+81 : [[48, 48], [67, 41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 7
+7 : [[41, 41]]
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 82
+82 : [[23, 48], [21, 41]]
+loop with start_rule 23
+23 : [[84, 41], [27, 48]]
+loop with start_rule 84
+84 : [[18, 48]]
+loop with start_rule 18
+18 : [[48, 48]]
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 27
+27 : [[100, 41], [7, 48]]
+loop with start_rule 100
+100 : [[48, 41], [67, 48]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 7
+7 : [[41, 41]]
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 21
+21 : [[48, 83], [41, 51]]
+loop with start_rule 48
+48 : b
+loop with start_rule 83
+83 : [[67, 89]]
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 89
+89 : [[41, 41], [41, 48]]
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 51
+51 : [[41, 1], [48, 81]]
+loop with start_rule 41
+41 : a
+loop with start_rule 1
+1 : [[41, 41], [48, 48]]
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 81
+81 : [[48, 48], [67, 41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 78
+78 : [[41, 65], [48, 66]]
+loop with start_rule 41
+41 : a
+loop with start_rule 65
+65 : [[16, 48], [58, 41]]
+loop with start_rule 16
+16 : [[48, 5], [41, 45]]
+loop with start_rule 48
+48 : b
+loop with start_rule 5
+5 : [[41, 110]]
+loop with start_rule 41
+41 : a
+loop with start_rule 110
+110 : [[48, 41], [41, 41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 45
+45 : [[7, 48]]
+loop with start_rule 7
+7 : [[41, 41]]
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 58
+58 : [[41, 22], [48, 111]]
+loop with start_rule 41
+41 : a
+loop with start_rule 22
+22 : [[103, 48], [18, 41]]
+loop with start_rule 103
+103 : [[67, 67]]
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 18
+18 : [[48, 48]]
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 111
+111 : [[103, 67]]
+loop with start_rule 103
+103 : [[67, 67]]
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 66
+66 : [[41, 126], [48, 121]]
+loop with start_rule 41
+41 : a
+loop with start_rule 126
+126 : [[75, 48], [27, 41]]
+loop with start_rule 75
+75 : [[89, 41], [39, 48]]
+loop with start_rule 89
+89 : [[41, 41], [41, 48]]
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 39
+39 : [[41, 67], [48, 41]]
+loop with start_rule 41
+41 : a
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 27
+27 : [[100, 41], [7, 48]]
+loop with start_rule 100
+100 : [[48, 41], [67, 48]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 7
+7 : [[41, 41]]
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 121
+121 : [[48, 49], [41, 47]]
+loop with start_rule 48
+48 : b
+loop with start_rule 49
+49 : [[81, 41], [7, 48]]
+loop with start_rule 81
+81 : [[48, 48], [67, 41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 7
+7 : [[41, 41]]
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 47
+47 : [[120, 41], [81, 48]]
+loop with start_rule 120
+120 : [[48, 41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 81
+81 : [[48, 48], [67, 41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+31 : [[48, 133], [41, 127]]
+loop with start_rule 48
+48 : b
+133 : [[48, 15], [41, 13]]
+loop with start_rule 48
+48 : b
+15 : [[41, 20], [48, 63]]
+loop with start_rule 41
+41 : a
+20 : [[61, 48], [57, 41]]
+61 : [[41, 37], [48, 6]]
+loop with start_rule 41
+41 : a
+37 : [[41, 7], [48, 120]]
+loop with start_rule 41
+41 : a
+loop with start_rule 7
+7 : [[41, 41]]
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 120
+120 : [[48, 41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+6 : [[48, 100], [41, 132]]
+loop with start_rule 48
+48 : b
+loop with start_rule 100
+100 : [[48, 41], [67, 48]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 132
+132 : [[41, 48], [48, 41]]
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+57 : [[41, 92], [48, 80]]
+loop with start_rule 41
+41 : a
+loop with start_rule 92
+92 : [[48, 103], [41, 34]]
+loop with start_rule 48
+48 : b
+loop with start_rule 103
+103 : [[67, 67]]
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 34
+34 : [[48, 41], [48, 48]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+80 : [[120, 48], [98, 41]]
+loop with start_rule 120
+120 : [[48, 41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+98 : [[41, 48]]
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+63 : [[41, 59], [48, 17]]
+loop with start_rule 41
+41 : a
+59 : [[41, 47], [48, 125]]
+loop with start_rule 41
+41 : a
+loop with start_rule 47
+47 : [[120, 41], [81, 48]]
+loop with start_rule 120
+120 : [[48, 41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 81
+81 : [[48, 48], [67, 41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+125 : [[41, 120], [48, 132]]
+loop with start_rule 41
+41 : a
+loop with start_rule 120
+120 : [[48, 41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 132
+132 : [[41, 48], [48, 41]]
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+17 : [[62, 48], [26, 41]]
+62 : [[100, 48], [98, 41]]
+loop with start_rule 100
+100 : [[48, 41], [67, 48]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 98
+98 : [[41, 48]]
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+26 : [[41, 72], [48, 81]]
+loop with start_rule 41
+41 : a
+loop with start_rule 72
+72 : [[48, 48], [41, 67]]
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 81
+81 : [[48, 48], [67, 41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+13 : [[43, 41], [69, 48]]
+43 : [[52, 48], [112, 41]]
+52 : [[41, 73], [48, 104]]
+loop with start_rule 41
+41 : a
+loop with start_rule 73
+73 : [[1, 48], [103, 41]]
+loop with start_rule 1
+1 : [[41, 41], [48, 48]]
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 103
+103 : [[67, 67]]
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+104 : [[48, 1], [41, 81]]
+loop with start_rule 48
+48 : b
+loop with start_rule 1
+1 : [[41, 41], [48, 48]]
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 81
+81 : [[48, 48], [67, 41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+112 : [[48, 71], [41, 123]]
+loop with start_rule 48
+48 : b
+71 : [[67, 34]]
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 34
+34 : [[48, 41], [48, 48]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+123 : [[110, 48], [98, 41]]
+loop with start_rule 110
+110 : [[48, 41], [41, 41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 98
+98 : [[41, 48]]
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+69 : [[106, 41], [32, 48]]
+106 : [[88, 41]]
+88 : [[7, 48], [89, 41]]
+loop with start_rule 7
+7 : [[41, 41]]
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 89
+89 : [[41, 41], [41, 48]]
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+32 : [[41, 96], [48, 95]]
+loop with start_rule 41
+41 : a
+96 : [[100, 48], [103, 41]]
+loop with start_rule 100
+100 : [[48, 41], [67, 48]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 103
+103 : [[67, 67]]
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+95 : [[34, 41], [103, 48]]
+loop with start_rule 34
+34 : [[48, 41], [48, 48]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 103
+103 : [[67, 67]]
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+127 : [[41, 94], [48, 10]]
+loop with start_rule 41
+41 : a
+94 : [[41, 4], [48, 76]]
+loop with start_rule 41
+41 : a
+4 : [[131, 48], [70, 41]]
+131 : [[90, 41], [28, 48]]
+90 : [[81, 41], [34, 48]]
+loop with start_rule 81
+81 : [[48, 48], [67, 41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 34
+34 : [[48, 41], [48, 48]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+28 : [[41, 132], [48, 120]]
+loop with start_rule 41
+41 : a
+loop with start_rule 132
+132 : [[41, 48], [48, 41]]
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 120
+120 : [[48, 41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+70 : [[87, 48], [115, 41]]
+87 : [[103, 48], [72, 41]]
+loop with start_rule 103
+103 : [[67, 67]]
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 72
+72 : [[48, 48], [41, 67]]
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+115 : [[67, 132]]
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 132
+132 : [[41, 48], [48, 41]]
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+76 : [[48, 14], [41, 35]]
+loop with start_rule 48
+48 : b
+14 : [[9, 48], [93, 41]]
+9 : [[89, 41], [100, 48]]
+loop with start_rule 89
+89 : [[41, 41], [41, 48]]
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 100
+100 : [[48, 41], [67, 48]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 93
+93 : [[110, 41], [34, 48]]
+loop with start_rule 110
+110 : [[48, 41], [41, 41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 34
+34 : [[48, 41], [48, 48]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+35 : [[123, 48], [91, 41]]
+loop with start_rule 123
+123 : [[110, 48], [98, 41]]
+loop with start_rule 110
+110 : [[48, 41], [41, 41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 98
+98 : [[41, 48]]
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+91 : [[34, 48]]
+loop with start_rule 34
+34 : [[48, 41], [48, 48]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+10 : [[108, 48], [53, 41]]
+108 : [[102, 41], [60, 48]]
+102 : [[48, 62], [41, 50]]
+loop with start_rule 48
+48 : b
+loop with start_rule 62
+62 : [[100, 48], [98, 41]]
+loop with start_rule 100
+100 : [[48, 41], [67, 48]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 98
+98 : [[41, 48]]
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+50 : [[7, 41], [7, 48]]
+loop with start_rule 7
+7 : [[41, 41]]
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 7
+7 : [[41, 41]]
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+60 : [[30, 41], [86, 48]]
+30 : [[89, 41], [18, 48]]
+loop with start_rule 89
+89 : [[41, 41], [41, 48]]
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 18
+18 : [[48, 48]]
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+86 : [[48, 89], [41, 39]]
+loop with start_rule 48
+48 : b
+loop with start_rule 89
+89 : [[41, 41], [41, 48]]
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 39
+39 : [[41, 67], [48, 41]]
+loop with start_rule 41
+41 : a
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+53 : [[54, 48], [119, 41]]
+54 : [[41, 36], [48, 55]]
+loop with start_rule 41
+41 : a
+36 : [[48, 81], [41, 100]]
+loop with start_rule 48
+48 : b
+loop with start_rule 81
+81 : [[48, 48], [67, 41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 100
+100 : [[48, 41], [67, 48]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+55 : [[48, 1], [41, 18]]
+loop with start_rule 48
+48 : b
+loop with start_rule 1
+1 : [[41, 41], [48, 48]]
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 18
+18 : [[48, 48]]
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+119 : [[48, 12], [41, 19]]
+loop with start_rule 48
+48 : b
+12 : [[41, 18], [48, 98]]
+loop with start_rule 41
+41 : a
+loop with start_rule 18
+18 : [[48, 48]]
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 98
+98 : [[41, 48]]
+loop with start_rule 41
+41 : a
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+19 : [[48, 72], [41, 18]]
+loop with start_rule 48
+48 : b
+loop with start_rule 72
+72 : [[48, 48], [41, 67]]
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 67
+67 : [[48], [41]]
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+loop with start_rule 18
+18 : [[48, 48]]
+loop with start_rule 48
+48 : b
+loop with start_rule 48
+48 : b
+loop with start_rule 41
+41 : a
+loop with start_rule 41
+41 : a
+160
