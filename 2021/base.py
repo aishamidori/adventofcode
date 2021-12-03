@@ -1,6 +1,3 @@
-from collections import defaultdict
-from copy import copy, deepcopy
-
 import sys
 
 def preprocess(file_path):
@@ -21,5 +18,9 @@ if __name__ == "__main__":
         print("Please provide a file argument")
     else:
         processed = preprocess(sys.argv[1])
+
+        print('----- PART 1 -----')
         print(part1(processed))
-        #print(part2(processed))
+
+        print('----- PART 1 -----')
+        print(part2(processed))
