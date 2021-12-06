@@ -22,5 +22,5 @@ if __name__ == "__main__":
         print('----- PART 1 -----')
         print(part1(processed))
 
-        print('----- PART 1 -----')
+        print('----- PART 2 -----')
         print(part2(processed))
