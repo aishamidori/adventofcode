@@ -8,23 +8,18 @@ def preprocess(file_path):
 
 def part1(processed):
     processed.sort()
-    
-    # The minimum is the middle of the sorted list
-    middle = int(len(processed)/2)
-    target = processed[middle]
-    fuel = 0
-    for pos in processed:
-        fuel += abs(pos-target)
-
-    return fuel
+    return find_min_fuel(processed, lambda pos, target: abs(pos-target))
 
 def part2(processed):
     processed.sort()
+    return find_min_fuel(processed, lambda pos, target: sum(range(abs(pos - target) + 1)))
+
+def find_min_fuel(sorted, calc_func):
     min_fuel = None
-    for target in range(processed[-1] + 1):
+    for target in range(sorted[-1] + 1):
         fuel = 0
         for pos in processed:
-            fuel += sum(range(abs(pos - target) + 1))
+            fuel += calc_func(pos, target)
 
         # Update min if necessary
         if not min_fuel or fuel < min_fuel:
@@ -34,6 +29,7 @@ def part2(processed):
             break
 
     return min_fuel
+
 
 if __name__ == "__main__":
     if not len(sys.argv) > 1:
