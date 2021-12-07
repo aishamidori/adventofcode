@@ -1,4 +1,6 @@
+import math
 import sys
+from functools import reduce
 
 def preprocess(file_path):
     processed = []
@@ -8,28 +10,14 @@ def preprocess(file_path):
 
 def part1(processed):
     processed.sort()
-    return find_min_fuel(processed, lambda pos, target: abs(pos-target))
+    target = processed[round(len(processed)/2)]
+    return sum(list(map(lambda pos: abs(pos-target), processed)))
 
 def part2(processed):
     processed.sort()
-    return find_min_fuel(processed, lambda pos, target: sum(range(abs(pos - target) + 1)))
-
-def find_min_fuel(sorted, calc_func):
-    min_fuel = None
-    for target in range(sorted[-1] + 1):
-        fuel = 0
-        for pos in processed:
-            fuel += calc_func(pos, target)
-
-        # Update min if necessary
-        if not min_fuel or fuel < min_fuel:
-            min_fuel = fuel
-        else:
-            # Once it starts going up again, we're done!
-            break
-
-    return min_fuel
-
+    avg = sum(processed) / len(processed)
+    targets = [math.floor(avg), math.ceil(avg)]
+    return min(list(map(lambda target: sum(list(map(lambda pos: sum(range(abs(pos - target) + 1)), processed))), targets)))
 
 if __name__ == "__main__":
     if not len(sys.argv) > 1:
