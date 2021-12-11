@@ -70,7 +70,7 @@ def part1(processed):
         for board in boards:
             board.maybe_mark(num)
             if board.check_win():
-                print("WINNER")
+                print('WINNER')
                 print(board)
                 return board.get_score() * int(num)
         boards = new_boards
@@ -82,7 +82,7 @@ def part2(processed):
         for board in boards:
             board.maybe_mark(num)
             if board.check_win():
-                print("WINNER")
+                print('WINNER')
                 print(board)
 
                 # Remove this board since it's won. If it's the last one, it's the one we're looking for
@@ -91,9 +91,9 @@ def part2(processed):
                     return board.get_score() * int(num)
         boards = new_boards
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     if not len(sys.argv) > 1:
-        print("Please provide a file argument")
+        print('Please provide a file argument')
     else:
         processed = preprocess(sys.argv[1])
 

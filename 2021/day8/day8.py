@@ -16,7 +16,7 @@ def part1(entries):
         patterns, output_value = entry
         for pattern in output_value:
             num = get_num(pattern)
-            print("%s -> %s" % (pattern, str(num)))
+            print('%s -> %s' % (pattern, str(num)))
             if num:
                 count += 1
     return count
@@ -29,8 +29,8 @@ def part2(entries):
     return total
 
 def solve_entry(patterns, output_value):
-    print("\n")
-    print("|".join([" ".join(patterns), " ".join(output_value)]))
+    print('\n')
+    print('|'.join([' '.join(patterns), ' '.join(output_value)]))
     patterns.sort(key=len)
     nums = [None for _ in range(10)]
 
@@ -63,12 +63,12 @@ def solve_entry(patterns, output_value):
             else:
                 nums[6] = set(pattern)
         else:
-            print("ERROR")
+            print('ERROR')
 
     final_num = ''
     for val in output_value:
         num = nums.index(set(val))
-        print("%s -> %d" % (val, num))
+        print('%s -> %d' % (val, num))
         final_num += str(num)
     return int(final_num)
 
@@ -85,9 +85,9 @@ def get_num(pattern):
     else:
         return None
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     if not len(sys.argv) > 1:
-        print("Please provide a file argument")
+        print('Please provide a file argument')
     else:
         entries = preprocess(sys.argv[1])
 

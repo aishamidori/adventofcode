@@ -1,6 +1,5 @@
 import math
 import sys
-from functools import reduce
 
 def preprocess(file_path):
     processed = []
@@ -19,9 +18,9 @@ def part2(processed):
     targets = [math.floor(avg), math.ceil(avg)]
     return min(list(map(lambda target: sum(list(map(lambda pos: sum(range(abs(pos - target) + 1)), processed))), targets)))
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     if not len(sys.argv) > 1:
-        print("Please provide a file argument")
+        print('Please provide a file argument')
     else:
         processed = preprocess(sys.argv[1])
 

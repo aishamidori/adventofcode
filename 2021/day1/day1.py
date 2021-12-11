@@ -36,9 +36,9 @@ def part2(processed):
 
     return increases
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     if not len(sys.argv) > 1:
-        print("Please provide a file argument")
+        print('Please provide a file argument')
     else:
         processed = preprocess(sys.argv[1])
         #print(part1(processed))

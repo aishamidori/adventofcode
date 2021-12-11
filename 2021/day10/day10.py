@@ -43,7 +43,7 @@ def is_valid_line(line):
         elif c in CLOSED:
             opp = closed_to_open(c)
             if not stack or stack.pop() is not opp:
-                #print("Not valid, unmatched %s" % c)
+                #print('Not valid, unmatched %s' % c)
                 return (False, c)
 
     return (True, stack)
@@ -71,9 +71,9 @@ def part2(processed):
     scores.sort()
     return scores[int(len(scores)/2)]
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     if not len(sys.argv) > 1:
-        print("Please provide a file argument")
+        print('Please provide a file argument')
     else:
         processed = preprocess(sys.argv[1])
 

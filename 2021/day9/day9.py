@@ -1,5 +1,4 @@
 import sys
-from collections import defaultdict
 from operator import attrgetter
 
 #### GLOBAL HELPERS ####
@@ -135,9 +134,9 @@ def part2(file_path):
 
     return result
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     if not len(sys.argv) > 1:
-        print("Please provide a file argument")
+        print('Please provide a file argument')
     else:
         print('----- PART 1 -----')
         print(part1(preprocess(sys.argv[1])))
