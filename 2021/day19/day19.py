@@ -1,7 +1,6 @@
 import itertools
 import sys
 from collections import defaultdict
-from functools import reduce
 from math import floor, pow, sqrt
 
 
@@ -11,8 +10,10 @@ class Scanner:
         self.points = points
         self.distances = self.calculate_distances()
         self.orientations = {}
+        self.overlaps = {}
         self.transformations = []
         self.path = []
+        self.transformed_points = []
 
     def calculate_distances(self):
         distances = {}
@@ -27,64 +28,86 @@ class Scanner:
     def print_transformations(self):
         print("\n".join(['scanner %d -- p=%s, f=%s, l=%s --> scanner %d' % (scanner.id, self.orientations[scanner][0], self.orientations[scanner][1], self.orientations[scanner][2], self.id) for scanner in self.orientations.keys()]))
 
-    def transformed_points(self):
-        #print('transformations for scanner %d' % self.id, self.transformations)
+    # Testing/debugging helper
+    def verify_overlap(self):
+        for scanner in self.orientations:
+            overlap = set(self.transformed_points).intersection(set(scanner.transformed_points))
+            if not len(overlap) >= 12:
+                print('ERROR: Expected overlap %d with scanner %d, found %d points of overlap' % (len(self.overlaps[scanner]), scanner.id, len(overlap)))
+            else:
+                print("Verified overlap of %d points with scanner %d" % (len(self.overlaps[scanner]), scanner.id))
+
+    def transform_points(self):
         new_points = []
         for point in self.points:
-            new_point = reduce(lambda point, transformation: transform_point(point, *transformation), self.transformations, point)
+            new_point = point
+            for transformation in reversed(self.transformations):
+                new_point = transform_point(new_point, *transformation)
             new_points.append(new_point)
+
+        self.transformed_points = new_points
         return new_points
 
 def get_distance(point1, point2):
     return sqrt(pow(point2[0] - point1[0], 2) + pow(point2[1] - point1[1], 2) + pow(point2[2] - point1[2], 2))
 
-def find_overlap(scanners):
+def get_manhattan_distance(point1, point2):
+    return abs(point2[0] - point1[0]) + abs(point2[1] - point1[1]) + abs(point2[2] - point1[2])
+
+def build(scanners):
     for i,j in itertools.combinations(range(len(scanners)), 2):
-        scanner1 = scanners[i]
-        scanner2 = scanners[j]
-        overlap = set(scanner1.distances.keys()).intersection(set(scanner2.distances.keys()))
+        find_overlap(scanners[i], scanners[j])
+    build_transformations(scanners)
 
-        # 66 is the number of unique distances with 12 points
-        if len(overlap) >= 66:
-            print(len(overlap))
-            overlapping_points = []
-            point_to_distances = defaultdict(list)
-            for distance in overlap:
-                points = scanner1.distances[distance]
-                overlapping_points += points
-                point_to_distances[points[0]].append(distance)
-                point_to_distances[points[1]].append(distance)
+def find_overlap(scanner1, scanner2):
+    overlap = set(scanner1.distances.keys()).intersection(set(scanner2.distances.keys()))
 
-            unique_overlaps = list(set([tuple(point) for point in overlapping_points]))
+    # 66 is the number of unique distances with 12 points
+    if len(overlap) >= 66:
+        overlapping_points = []
+        point_to_distances = defaultdict(list)
+        for distance in overlap:
+            points = scanner1.distances[distance]
+            overlapping_points += points
+            point_to_distances[points[0]].append(distance)
+            point_to_distances[points[1]].append(distance)
 
-            point = unique_overlaps[0]
-            to_match_points1 = [point]
-            to_match_distances = []
+        unique_overlaps = list(set([tuple(point) for point in overlapping_points]))
 
-            for _ in range(2):
-                distance = point_to_distances[point][0]
-                to_match_distances.append(distance)
-                next = scanner1.distances[distance][:]
+        # Build set of points in scanner 1
+        point = unique_overlaps[0]
+        to_match_points1 = [point]
+        to_match_distances = []
+        for _ in range(2):
+            distance = point_to_distances[point][0]
+            i = 1
+            while distance in to_match_distances:
+                distance = point_to_distances[point][i]
+                i += 1
 
-                next.remove(point)
-                to_match_points1.append(next[0])
-                point = next[0]
+            to_match_distances.append(distance)
+            next = scanner1.distances[distance][:]
+            next.remove(point)
+            to_match_points1.append(next[0])
+            point = next[0]
 
-            to_match_distances.append(set(point_to_distances[to_match_points1[0]]).intersection(set(point_to_distances[to_match_points1[2]])).pop())
+        to_match_distances.append(set(point_to_distances[to_match_points1[0]]).intersection(set(point_to_distances[to_match_points1[2]])).pop())
 
-            first_pts = set(scanner2.distances[to_match_distances[0]][:])
-            next_pts = set(scanner2.distances[to_match_distances[1]][:])
-            to_match_points2 = list(first_pts.difference(next_pts)) + list(first_pts.intersection(next_pts)) + list(next_pts.difference(first_pts))
+        # Build set of points in scanner 2 based on distances
+        first_pts = set(scanner2.distances[to_match_distances[0]][:])
+        next_pts = set(scanner2.distances[to_match_distances[1]][:])
+        to_match_points2 = list(first_pts.difference(next_pts)) + list(first_pts.intersection(next_pts)) + list(next_pts.difference(first_pts))
 
-            orientation = find_orientation(to_match_points1, to_match_points2)
-            scanner2.set_orientation(scanner1, *orientation)
+        # Set orientations both directions because we're not sure which will be the shorter path
+        orientation1 = find_orientation(to_match_points1, to_match_points2)
+        scanner2.set_orientation(scanner1, *orientation1)
+        scanner2.overlaps[scanner1] = unique_overlaps
 
-            orientation = find_orientation(to_match_points2, to_match_points1)
-            scanner1.set_orientation(scanner2, *orientation)
+        orientation2 = find_orientation(to_match_points2, to_match_points1)
+        scanner1.set_orientation(scanner2, *orientation2)
+        scanner1.overlaps[scanner2] = unique_overlaps
 
-            print("\nScanners %d and %d overlap by %d points" % (scanner1.id, scanner2.id, len(unique_overlaps)))
-            #print("Overlapping points: %s" % '\n\t'.join([','.join([str(num) for num in point]) for point in unique_overlaps]))
-
+def build_transformations(scanners):
     scanner = scanners[0]
     scanner.path = [scanner]
     to_visit = [scanner]
@@ -95,57 +118,51 @@ def find_overlap(scanners):
 
         for scanner in next.orientations.keys():
             if not scanner in visited:
-                scanner.transformations = [scanner.orientations[next]] + next.transformations
+                scanner.transformations = next.transformations + [scanner.orientations[next]]
                 scanner.path = next.path + [scanner]
                 to_visit.append(scanner)
 
+def transform_points(scanners):
     points = []
     for i in range(len(scanners)):
-        print('----- SCANNER %d -----' % scanners[i].id)
-        #scanners[i].print_transformations()
-        print(' -> '.join([str(scanner.id) for scanner in scanners[i].path]))
-        #print(scanners[i].transformations)
-        scanner_loc = [0,0,0]
-        for permutation, flip, location in scanners[i].transformations:
-            for j in range(3):
-                scanner_loc[j] = scanner_loc[j] + location[j]
+        points += scanners[i].transform_points()
+    return points
 
-        transformed = scanners[i].transformed_points()
-        for j in range(len(transformed)):
-            print('%s -> %s' % (','.join([str(num) for num in scanners[i].points[j]]), ','.join([str(num) for num in transformed[j]])))
-        points += transformed
-        if not scanners[i].orientations:
-            print("ERROR scanner %d doesn't have neighbors" % i)
-            return
+def get_max_distance(scanners):
+    locations = []
 
-    print("ALL POINTS")
-    print('\n'.join([','.join([str(num) for num in point]) for point in sorted(set(points))]))
-    print(len(set(points)))
+    for i in range(len(scanners)):
+        # Shortcut to not have to calculate the location from the set of transformations
+        _, _, location = find_orientation(scanners[i].transformed_points[:3], scanners[i].points[:3])
+        locations.append([-1 * num for num in location])
 
+    max_distance = 0
+    pairs = itertools.combinations(locations, 2)
+    for l1, l2 in pairs:
+        distance = get_manhattan_distance(l1, l2)
+        if distance > max_distance:
+            max_distance = distance
+    return max_distance
 
 # How does scanner have to be oriented for these points to match up?
 def find_orientation(points1, points2):
     permutations = list(itertools.permutations(range(3)))
     flips = list(itertools.product([-1, 1], repeat=3))
     for permutation in permutations:
-        #print('permutation', permutation)
         for flip in flips:
-            #print('flip', flip)
             all_match = True
-            new_point0 = transform_point(points2[0], list(permutation), list(flip))
-            new_point1 = transform_point(points2[1], list(permutation), list(flip))
+            new_points = [transform_point(points2[i], permutation, flip) for i in range(3)]
             location = [0,0,0]
             for axis in range(3):
-                if (new_point1[axis]- points1[1][axis]) == (new_point0[axis] - points1[0][axis]):
-                    location[axis] = points1[1][axis] - new_point1[axis]
-                else:
-                    #print('Orientation doesn\'t work')
-                    all_match = False
-                    break
+                distance = (points1[0][axis] - new_points[0][axis])
+                for point_i in [1,2]:
+                    if not (points1[point_i][axis] - new_points[point_i][axis]) == distance:
+                        all_match = False
+                        break
+                if all_match:
+                    location[axis] = distance
 
             if all_match:
-                print('Found orientation %s -> %s and %s -> %s' % (str(new_point0), str(points1[0]), str(new_point1), str(points1[1])))
-                print('location', location)
                 return (permutation, flip, tuple(location))
     return (None, None, None)
 
@@ -159,7 +176,6 @@ def transform_point(point, permutation, flips, location=[0,0,0]):
     final_point = []
     for i in range(3):
         final_point.append((point[permutation[i]] * flips[i]) + location[i])
-    #print('transformed point %s with p=%s, f=%s, l=%s -----> %s' % (str(point), str(permutation), str(flips), str(location), str(final_point)))
     return tuple(final_point)
 
 if __name__ == '__main__':
@@ -202,6 +218,12 @@ if __name__ == '__main__':
 
                 scanners.append(Scanner(int(number), beacons))
 
+        build(scanners)
+
         print('----- PART 1 -----')
-        find_overlap(scanners)
-        #print('----- PART 2 -----')
+        points = transform_points(scanners)
+        print('Unique Points:', len(set(points)))
+
+        print('----- PART 2 -----')
+        max_dist = get_max_distance(scanners)
+        print('Max Distance:', max_dist)
